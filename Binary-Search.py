@@ -4,11 +4,13 @@
 4
 5        while l <= r:
 6            m = (l + r) // 2
-7            if nums[m] < target:
-8                l = m + 1
-9            elif nums[m] > target:
-10                r = m - 1
-11            else:
-12                return m
-13        
-14        return -1
+7
+8            if nums[m] < target:
+9                l = m + 1
+10            elif nums[m] > target:
+11                r = m -1
+12            else:
+13                return m
+14
+15        else:
+16            return -1
