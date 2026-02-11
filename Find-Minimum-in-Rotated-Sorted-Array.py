@@ -11,7 +11,7 @@
 11            m = (l + r) // 2
 12            res = min(res, nums[m])
 13
-14            if nums[m] >= nums[l]: #why?
+14            if nums[m] >= nums[l]: 
 15                l = m + 1
 16            else:
 17                r = m - 1
