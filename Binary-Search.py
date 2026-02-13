@@ -8,9 +8,8 @@
 8            if nums[m] < target:
 9                l = m + 1
 10            elif nums[m] > target:
-11                r = m -1
+11                r = m - 1
 12            else:
 13                return m
 14
-15        else:
-16            return -1
+15        return -1
