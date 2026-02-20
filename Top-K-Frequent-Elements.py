@@ -13,5 +13,5 @@
 13                res.append(num)
 14                k -= 1
 15
-16                if k == 0: 
+16                if k == 0:
 17                    return res
