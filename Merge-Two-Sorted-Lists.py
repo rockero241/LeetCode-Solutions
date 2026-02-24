@@ -8,7 +8,7 @@
 8    def mergeTwoLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
 9        dummy = ListNode()
 10        tail = dummy
-11        
+11
 12        while l1 and l2:
 13            if l1.val < l2.val:
 14                tail.next = l1
@@ -16,11 +16,12 @@
 16            else:
 17                tail.next = l2
 18                l2 = l2.next
-19            tail = tail.next
-20
-21        if l1:
-22            tail.next = l1
-23        elif l2:
-24            tail.next = l2
-25
-26        return dummy.next
+19
+20            tail = tail.next
+21
+22        if l1:
+23            tail.next = l1
+24        elif l2:
+25            tail.next = l2
+26
+27        return dummy.next
